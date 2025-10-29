@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Placeholder for HappyCo logo - Replace this entire file with your actual logo SVG -->
+  <rect width="200" height="200" fill="#f0f0f0" rx="10"/>
+  <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#666" text-anchor="middle" dominant-baseline="middle">HappyCo Logo</text>
+</svg>
