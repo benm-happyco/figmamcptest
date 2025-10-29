@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Container, Title, Button, Stack, Text, Paper } from '@mantine/core'
+import { Container, Title, Stack, Text, Paper } from '@mantine/core'
+import { Button } from './components/Button.jsx'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
