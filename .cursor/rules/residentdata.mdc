@@ -4,3 +4,5 @@ alwaysApply: true
 • Never make up fake data as a plaxceholder for residents.
 • ALWAYS connect to this public supabase to get fake resident data: https://eqtignwdytafyszoqlfq.supabase.co/rest/v1/residents
    • apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVxdGlnbndkeXRhZnlzem9xbGZxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM5OTUwMDEsImV4cCI6MjA2OTU3MTAwMX0.LvJK4rhMyCttsD1zW3MnAjYjbivTnyArUazDhlWWC1k
+• Always add the Pageheader component to every design and confirm if users want the HPM or the SETTINGS variant
+• Never put aggrid tables directly in paper components, put the directly in the Stack 

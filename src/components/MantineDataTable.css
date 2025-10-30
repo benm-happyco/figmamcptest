@@ -1,0 +1,196 @@
+/* Mantine AG Grid Theme Styles using CSS Variables */
+
+/* Ensure AG Grid wrapper itself has no border */
+.mantine-ag-grid {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Header styles */
+.mantine-ag-grid .ag-header-cell {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--mantine-color-gray-1, #e7e7e7);
+  padding-left: var(--mantine-spacing-lg, 16px);
+  padding-right: var(--mantine-spacing-lg, 16px);
+  height: 48px;
+  font-family: var(--mantine-font-family, 'Proxima Nova, sans-serif');
+  font-size: var(--mantine-font-size-xs, 12px);
+  font-weight: 600;
+  color: var(--mantine-color-gray-6, #758795);
+  line-height: 15px;
+}
+
+.mantine-ag-grid .ag-header-cell-text {
+  font-family: var(--mantine-font-family, 'Proxima Nova, sans-serif');
+  font-size: var(--mantine-font-size-xs, 12px);
+  font-weight: 600;
+  color: var(--mantine-color-gray-6, #758795);
+  line-height: 15px;
+}
+
+/* Row styles - Standard spacing */
+.mantine-ag-grid.standard-spacing .ag-row {
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.mantine-ag-grid.standard-spacing .ag-row:not(.ag-header-row) {
+  border-bottom: 1px solid var(--mantine-color-gray-1, #e7e7e7);
+}
+
+/* Row styles - Compact spacing */
+.mantine-ag-grid.compact-spacing .ag-row {
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.mantine-ag-grid.compact-spacing .ag-row:not(.ag-header-row) {
+  border-bottom: 1px solid var(--mantine-color-gray-1, #e7e7e7);
+}
+
+/* Ensure all rows use flexbox for proper alignment */
+.mantine-ag-grid .ag-row {
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+/* Cell styles */
+.mantine-ag-grid .ag-cell {
+  background-color: #ffffff;
+  padding-left: var(--mantine-spacing-lg, 16px) !important;
+  padding-right: var(--mantine-spacing-lg, 16px) !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  font-family: var(--mantine-font-family, 'Proxima Nova, sans-serif');
+  font-size: var(--mantine-font-size-sm, 14px);
+  font-weight: 400;
+  color: var(--mantine-color-dark-9, #141414);
+  line-height: normal !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  vertical-align: middle !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* AG Grid cell wrapper - important for alignment */
+.mantine-ag-grid .ag-cell-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  height: 100% !important;
+  width: 100% !important;
+  line-height: normal !important;
+}
+
+/* AG Grid cell value container */
+.mantine-ag-grid .ag-cell-value {
+  font-family: var(--mantine-font-family, 'Proxima Nova, sans-serif');
+  font-size: var(--mantine-font-size-sm, 14px);
+  font-weight: 400;
+  color: var(--mantine-color-dark-9, #141414);
+  line-height: normal !important;
+  display: flex !important;
+  align-items: center !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* AG Grid cell content wrapper */
+.mantine-ag-grid .ag-cell .ag-cell-wrapper .ag-cell-value,
+.mantine-ag-grid .ag-cell > * {
+  display: flex !important;
+  align-items: center !important;
+  height: 100% !important;
+  line-height: normal !important;
+}
+
+/* Target any span or div within cells to ensure proper alignment */
+.mantine-ag-grid .ag-cell-wrapper span,
+.mantine-ag-grid .ag-cell-wrapper div,
+.mantine-ag-grid .ag-cell-value span,
+.mantine-ag-grid .ag-cell-value div {
+  display: inline-flex !important;
+  align-items: center !important;
+  line-height: normal !important;
+}
+
+/* Remove all borders from AG Grid wrapper and container elements */
+.mantine-ag-grid .ag-root-wrapper {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.mantine-ag-grid .ag-root-wrapper,
+.mantine-ag-grid .ag-header,
+.mantine-ag-grid .ag-center-cols-container,
+.mantine-ag-grid .ag-body-viewport,
+.mantine-ag-grid .ag-body-horizontal-scroll,
+.mantine-ag-grid .ag-body-horizontal-scroll-viewport {
+  border: none !important;
+  outline: none !important;
+}
+
+.mantine-ag-grid .ag-header {
+  border-bottom: none !important;
+}
+
+.mantine-ag-grid .ag-center-cols-container {
+  border: none !important;
+}
+
+/* Keep only the bottom border on rows (for row separation) */
+.mantine-ag-grid .ag-row:not(.ag-header-row) {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+/* Pagination footer */
+.mantine-ag-grid .ag-paging-panel {
+  background-color: #ffffff;
+  border-top: 1px solid var(--mantine-color-gray-1, #e7e7e7);
+  height: 64px;
+  padding-left: var(--mantine-spacing-lg, 16px);
+  padding-right: var(--mantine-spacing-lg, 16px);
+  font-family: var(--mantine-font-family, 'Proxima Nova, sans-serif');
+  font-size: var(--mantine-font-size-xs, 12px);
+  color: var(--mantine-color-dark-9, #141414);
+}
+
+/* Resize handle */
+.mantine-ag-grid .ag-header-cell-resize {
+  background-color: var(--mantine-color-gray-1, #e7e7e7);
+  width: 2px;
+}
+
+/* Row default background */
+.mantine-ag-grid .ag-row {
+  background-color: #ffffff;
+}
+
+/* Hover states */
+.mantine-ag-grid .ag-row:hover {
+  background-color: var(--ag-row-hover-color, var(--mantine-color-purple-0, #efefff));
+}
+
+/* Hover states - also update cells on row hover */
+.mantine-ag-grid .ag-row:hover .ag-cell {
+  background-color: var(--ag-row-hover-color, var(--mantine-color-purple-0, #efefff));
+}
+
+/* Selected row */
+.mantine-ag-grid .ag-row-selected {
+  background-color: #ffffff;
+}
+
+.mantine-ag-grid .ag-row-selected .ag-cell {
+  background-color: #ffffff;
+}
