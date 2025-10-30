@@ -104,6 +104,8 @@ export const theme = createTheme({
   primaryColor: 'purple',
   primaryShade: 6, // purple-6 (#635bff)
   
+  fontFamily: 'Proxima Nova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+  
   colors: {
     purple: colors.purple,
     red: colors.red,
@@ -157,6 +159,7 @@ export const theme = createTheme({
   defaultRadius: 'md',
   
   headings: {
+    fontFamily: 'Proxima Nova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
     fontWeight: '700',
     sizes: {
       h1: { fontSize: '40px', lineHeight: '1.2' },
