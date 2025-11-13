@@ -1,8 +1,23 @@
 ---
 alwaysApply: true
 ---
+• ALWAYS pay careful attention to ALL rules in the Figma MCP server.
+
+• Always use the custom "Button" component for buttons and follow the proper code structure and recommended props as found in the Figma MCP
+
+• CRITICAL BUTTON GUIDELINES (from Figma MCP - MUST follow exactly):
+   • Always check the Figma MCP carefully for button coding rules
 • Never make up fake data as a plaxceholder for residents.
 • ALWAYS connect to this public supabase to get fake resident data: https://eqtignwdytafyszoqlfq.supabase.co/rest/v1/residents
    • apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVxdGlnbndkeXRhZnlzem9xbGZxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM5OTUwMDEsImV4cCI6MjA2OTU3MTAwMX0.LvJK4rhMyCttsD1zW3MnAjYjbivTnyArUazDhlWWC1k
-• Always add the Pageheader component to every design and confirm if users want the HPM or the SETTINGS variant
-• Never put aggrid tables directly in paper components, put the directly in the Stack 
+• Before creating a table, get the correct field names from the supabase database to ensure the proper columns are created
+
+
+• Always add the Pageheader component to every design
+   • Before creating a page, ask if the user wants the HPM or the SETTINGS variant and use their selection
+   • Below the PageHeader component, ALWAYS place the Sidebar, left aligned on every page
+   • To the right of the Sidebar, put a PageContentWrapper instance.
+      • All content described by the user should go inside this PageContentWrapper
+
+
+• Never put AGgrid tables directly in paper components, put the directly in the Stack
